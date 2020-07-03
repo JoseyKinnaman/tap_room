@@ -39,6 +39,21 @@ class KombuchaControl extends React.Component {
     this.setState({ selectedKombucha: selectedKombucha});
   }
 
+  handleBuyAPint = (id) => {
+    const newSelectedKombucha = this.state.masterKombuchaList.filter((kombucha) => kombucha.id === id)[0];
+    if (newSelectedKombucha.pints === 0){
+    console.log('The tap has run dry')
+  } else {
+    const newPints = newSelectedKombucha.pints -1;
+    const newKombuchaPint = {...newSelectedKombucha, pints: newPints};
+    const oldKombuchaList = this.state.masterKombuchaList.filter((kombucha) => kombucha.id !== id);
+    this.setState({
+      masterKombuchaList: [...oldKombuchaList, newKombuchaPint],
+      selectedKombucha: newKombuchaPint,
+      });
+    }
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -54,7 +69,9 @@ class KombuchaControl extends React.Component {
       buttonText = "Return to Tap List"
     } else {
       currentlyVisibleState = (<KombuchaList kombuchaList={this.state.masterKombuchaList} 
-      onKombuchaSelection={this.handleChangingSelectedKombucha}/>
+      onKombuchaSelection={this.handleChangingSelectedKombucha}
+      onClickingBuy={this.handleBuyAPint}
+      />
       );
       buttonText =  "Add Kombucha"
     }

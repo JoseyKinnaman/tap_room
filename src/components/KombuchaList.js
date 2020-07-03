@@ -16,6 +16,7 @@ function KombuchaList(props){
         <h2>Current Tap List:</h2>
         {props.kombuchaList.map((kombucha) => <Kombucha 
             whenKombuchaClicked = {props.onKombuchaSelection}
+            whenKombuchaPurchased={props.onClickingBuy}
             name={kombucha.name}
             brand={kombucha.brand}
             price={kombucha.price}
@@ -33,7 +34,8 @@ function KombuchaList(props){
 
 KombuchaList.propTypes = {
   kombuchaList: PropTypes.array,
-  onKombuchaSelection: PropTypes.func
+  onKombuchaSelection: PropTypes.func,
+  onClickingBuy: PropTypes.func
 };
 
 export default KombuchaList;

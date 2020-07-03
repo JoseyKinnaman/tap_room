@@ -15,11 +15,12 @@ function Kombucha(props){
         <h3>{props.name}</h3>
         <h5>From: {props.brand}</h5>
         <h5>Flavor: {props.flavor}</h5>
-        {/* <p>$ {props.price}</p>
+        <p>$ {props.price}</p>
         <p>ACV: {props.alcoholContent}%</p>
         <div className="pints">
           <p>Pints remaning/keg: <b>{props.pints}</b></p>
-        </div> */}
+        </div>
+        <button class="btn btn-dark" onClick ={ ()=> props.whenKombuchaPurchased(props.id)}>Buy</button>
       </div>
     </React.Fragment>
   );
@@ -33,6 +34,7 @@ Kombucha.propTypes = {
   flavor: PropTypes.string.isRequired,
   pints: PropTypes.number.isRequired,
   whenKombuchaClicked: PropTypes.func,
+  whenKombuchaPurchased: PropTypes.func,
 };
 console.log(Kombucha.propTypes)
 
