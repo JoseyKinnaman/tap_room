@@ -1,11 +1,11 @@
-# **Help Queue**
+# **Tap Que**
 
 #### Author: **Jozy Kinnaman**
-#### June 29, 2020
+#### July 3rd, 2020
 
 ### Description
 
-_This application serves as an introduction to React with create-react-app, components, JSX, and props while building a static site. This help queue displays a list of tickets and a header header ._
+_A Friday Project for Epicodus that serves as an introduction to React with create-react-app, components, JSX, and props while building a dynamic site. This tap room displays a list of kombucha on tap and a static._
 
 ![Wireframe](src/img/help-queue-with-new-ticket-control.jpg)
 
@@ -15,7 +15,7 @@ _This application serves as an introduction to React with create-react-app, comp
 2. To download the project Directory to your desktop enter the following commands:
 ```
 cd Desktop
-git clone https://github.com/JoseyKinnaman/help-queue.git
+git clone https://github.com/JoseyKinnaman/tap-room.git
 cd social-media-clone
 ```
 3. To view the downloaded files, open them in a text editor or IDE of your choice.
@@ -35,7 +35,7 @@ npm run start
 
 ### Known Bugs
 
-No bugs have been identified at the time of this update.
+Site does not have full crud.
 
 ### Support and Contact Information
 
@@ -53,8 +53,10 @@ Please contact jozypants@gmail.com with questions.
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
 | **User can view a static header** | User Input:"localhost:3000" | Output: “Header is displayed" |
-| **User can view a static ticket queue** | User Input:"localhost:3000" | Output: “Ticket queue is displayed" |
-| **User can view a static ticket** | User Input:"localhost:3000" | Output: “Ticket is displayed" |
+| **User can view a list of kombucha on tap** | User Input:"localhost:3000" | Output: “Kombucha list is displayed" |
+| **User can view details about each kombucha** | User Input:"localhost:3000" | Output: "Kombucha is displayed" |
+| **User can add a kombucha to the list** | User Input:"localhost:3000" | Output: "Kombucha is added" |
+| **User can buy a kombucha** | User Input:"localhost:3000" | Output: "Kombucha is decremented" |
 
 #### License
 
