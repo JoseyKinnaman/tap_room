@@ -3,9 +3,17 @@ import React from 'react';
 
 
 function Header() {
+  const headerStyles = {
+    backgroundColor: '#F5F5F5',
+    border: 'solid 1pt grey',
+    textAlign: "center",
+    borderRadius: "8px"
+  }
   return (
     <React.Fragment>
-      <h1>Cascade Kombucha</h1>
+      <div style={headerStyles}>
+        <h1>Cascade Kombucha</h1>
+      </div>
     </React.Fragment>
   );
 }

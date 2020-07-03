@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 function Kombucha(props){
   return(
     <React.Fragment>
-      <h2>Current Tap List:</h2>
       <h3>{props.name}</h3>
       <p>From: {props.brand}</p>
       <p>flavor: {props.flavor}</p>
