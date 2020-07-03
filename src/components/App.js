@@ -5,11 +5,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
+  const appStyles ={
+    backgroundColor: "#D5E8D4",
+    border: 'solid 1pt grey',
+    textAlign: "center",
+    borderRadius: "8px",
+    margin: "20%",
+    padding: "15px"
+
+  }
   return (
    <React.Fragment>
-     <div className="container">
-      <Header/>
-      <KombuchaControl/>
+     <div style={appStyles}>
+      <div className="container">
+        <Header/>
+        <KombuchaControl/>
+        </div>
       </div>
    </React.Fragment>
   );
