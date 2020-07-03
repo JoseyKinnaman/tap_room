@@ -14,30 +14,28 @@ function KombuchaList(props){
     <React.Fragment>
       <div style={kombuchaListStyles}>
         <h2>Current Tap List:</h2>
-        {props.kombuchaList.map((kombucha, index) => <Kombucha name={kombucha.name}
-                brand={kombucha.brand}
-                price={kombucha.price}
-                alcoholContent={kombucha.alcoholContent}
-                flavor={kombucha.flavor}
-                pints={kombucha.pints}
-                key={index}/>
-            )}
+        {props.kombuchaList.map((kombucha) => <Kombucha 
+            whenKombuchaClicked = {props.onKombuchaSelection}
+            name={kombucha.name}
+            brand={kombucha.brand}
+            price={kombucha.price}
+            alcoholContent={kombucha.alcoholContent}
+            flavor={kombucha.flavor}
+            pints={kombucha.pints}
+            id={kombucha.id}
+            key={kombucha.id}
+            />
+        )}
       </div>
     </React.Fragment>  
   );
 }
 
 KombuchaList.propTypes = {
-  kombuchaList: PropTypes.array
+  kombuchaList: PropTypes.array,
+  onKombuchaSelection: PropTypes.func
 };
 
 export default KombuchaList;
 
 
-
-  // name: PropTypes.string.required,
-  // brand: PropTypes.string.required,
-  // price: PropTypes.number.required,
-  // alcholContent: PropTypes.number.required,
-  // flavor: PropTypes.string.required,
-  // pints: PropTypes.number.required
