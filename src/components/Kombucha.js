@@ -16,8 +16,8 @@ function Kombucha(props){
         <h3>{props.name}</h3>
         <h5>From: {props.brand}</h5>
         <h5>Flavor: {props.flavor}</h5>
-        <p>$ {props.price}</p>
-        <p>ACV: {props.alcoholContent}%</p>
+        {/* <p>$ {props.price}</p>
+        <p>ACV: {props.alcoholContent}%</p> */}
         <div className="pints">
           <p>Pints remaning/keg: <b>{props.pints}</b></p>
         </div>

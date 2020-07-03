@@ -10,8 +10,8 @@ function App() {
     border: 'solid 1pt grey',
     textAlign: "center",
     borderRadius: "8px",
-    margin: "20%",
-    padding: "15px"
+    margin: "10%",
+    padding: "10%"
   }
 
   return (

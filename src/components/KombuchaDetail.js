@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function KombuchaDetail(props) {
   const kombuchaDetailStyles = {
-    backgroundColor: '#E1D5E7',
+    backgroundColor: '#F5F5F5',
     border: 'solid 1pt #9673A6',
     textAlign: "center",
     borderRadius: "8px",
