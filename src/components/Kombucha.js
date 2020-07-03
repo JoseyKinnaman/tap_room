@@ -2,15 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Kombucha(props){
+  const kombuchaStyles ={
+    backgroundColor: '#E1D5E7',
+    border: 'solid 1pt #9673A6',
+    textAlign: "center",
+    borderRadius: "8px",
+    margin: "20px"
+  }
   return(
     <React.Fragment>
-      <h3>{props.name}</h3>
-      <p>From: {props.brand}</p>
-      <p>flavor: {props.flavor}</p>
-      <p>$ {props.price}</p>
-      <p>ACV: {props.alcoholContent}%</p>
-      <div className="pints">
-        <p>Pints remaning/keg: <b>{props.pints}</b></p>
+      <div style={kombuchaStyles}>
+        <h3>{props.name}</h3>
+        <p>From: {props.brand}</p>
+        <p>flavor: {props.flavor}</p>
+        <p>$ {props.price}</p>
+        <p>ACV: {props.alcoholContent}%</p>
+        <div className="pints">
+          <p>Pints remaning/keg: <b>{props.pints}</b></p>
+        </div>
       </div>
     </React.Fragment>
   );

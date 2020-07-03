@@ -7,7 +7,8 @@ function Header() {
     backgroundColor: '#F5F5F5',
     border: 'solid 1pt grey',
     textAlign: "center",
-    borderRadius: "8px"
+    borderRadius: "8px",
+    marginBottom: "20px"
   }
   return (
     <React.Fragment>
