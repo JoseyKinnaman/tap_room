@@ -6,8 +6,7 @@ function KombuchaList(props){
   return(
     <React.Fragment>
       <div className="">
-        {props.kombuchaList.map((kombucha, index)
-          => <Kombucha name={kombucha.name}
+        {props.kombuchaList.map((kombucha, index) => <Kombucha name={kombucha.name}
                 brand={kombucha.brand}
                 price={kombucha.alcoholContent}
                 flavor={kombucha.flavor}

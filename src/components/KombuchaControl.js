@@ -16,11 +16,18 @@ class KombuchaControl extends React.Component {
     this.setState( prevState => ({formVisibleOnPage: !prevState.formVisibleOnPage }));
   }
 
+  handleAddingNewKombuchaToList = (newKombucha) =>{
+    const newMasterKombuchaList = this.state.masterKombuchaList.concat(newKombucha)
+    this.setState({
+      masterKombuchaList: newMasterKombuchaList,
+      formVisibleOnPage: false });
+  }
+
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleState = <NewKombuchaForm />
+      currentlyVisibleState = <NewKombuchaForm onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />
       buttonText = "Return to Tap List"
     } else {
       currentlyVisibleState = <KombuchaList kombuchaList={this.state.masterKombuchaList}/>
