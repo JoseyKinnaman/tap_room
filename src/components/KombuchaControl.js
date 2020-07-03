@@ -42,7 +42,7 @@ class KombuchaControl extends React.Component {
   handleBuyAPint = (id) => {
     const newSelectedKombucha = this.state.masterKombuchaList.filter((kombucha) => kombucha.id === id)[0];
     if (newSelectedKombucha.pints === 0){
-    console.log('The tap has run dry')
+     alert("The tap hath run dry.")
   } else {
     const newPints = newSelectedKombucha.pints -1;
     const newKombuchaPint = {...newSelectedKombucha, pints: newPints};

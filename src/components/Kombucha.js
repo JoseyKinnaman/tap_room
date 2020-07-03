@@ -7,7 +7,8 @@ function Kombucha(props){
     border: 'solid 1pt #9673A6',
     textAlign: "center",
     borderRadius: "8px",
-    margin: "20px"
+    margin: "20px",
+    padding: "5px"
   }
   return(
     <React.Fragment>

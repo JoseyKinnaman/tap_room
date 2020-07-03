@@ -7,7 +7,8 @@ function KombuchaDetail(props) {
     border: 'solid 1pt #9673A6',
     textAlign: "center",
     borderRadius: "8px",
-    margin: "20px"
+    margin: "20px",
+    padding: "5px"
   }
   const {kombucha} = props;
   return (
@@ -20,9 +21,9 @@ function KombuchaDetail(props) {
         <h5>Flavor: {kombucha.flavor}</h5>
         <p>$ {kombucha.price}</p>
         <p>ACV: {kombucha.alcoholContent}%</p>
-        <div className="pints">
+        {/* <div className="pints">
           <p>Pints remaning/keg: <b>{kombucha.pints}</b></p>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );
