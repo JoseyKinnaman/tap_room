@@ -12,16 +12,16 @@ function App() {
     borderRadius: "8px",
     margin: "20%",
     padding: "15px"
-
   }
+
   return (
    <React.Fragment>
-     <div style={appStyles}>
-      <div className="container">
-        <Header/>
-        <KombuchaControl/>
+      <div style={appStyles}>
+        <div className="container">
+          <Header/>
+          <KombuchaControl/>
+          </div>
         </div>
-      </div>
    </React.Fragment>
   );
 }

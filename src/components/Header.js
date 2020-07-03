@@ -13,7 +13,8 @@ function Header() {
   return (
     <React.Fragment>
       <div style={headerStyles}>
-        <h1>Cascade Kombucha</h1>
+        <h1>Cascade Kombucha Co.</h1>
+        {/* would love to put a navbar here */}
       </div>
     </React.Fragment>
   );
