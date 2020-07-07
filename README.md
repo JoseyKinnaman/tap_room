@@ -16,7 +16,7 @@ _A Friday Project for Epicodus that serves as an introduction to React with crea
 ```
 cd Desktop
 git clone https://github.com/JoseyKinnaman/tap-room.git
-cd social-media-clone
+cd tap-room
 ```
 3. To view the downloaded files, open them in a text editor or IDE of your choice.
 * if you have VSCode for example, when your terminal is within the main project Directory you can open all of the files with the command:
