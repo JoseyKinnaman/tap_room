@@ -73,7 +73,7 @@ class KombuchaControl extends React.Component {
       onClickingBuy={this.handleBuyAPint}
       />
       );
-      buttonText =  "Add Kombucha"
+      buttonText =  "Add Keg"
     }
     return(
       <React.Fragment>
