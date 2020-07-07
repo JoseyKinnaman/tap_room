@@ -14,7 +14,7 @@ function KombuchaDetail(props) {
   return (
     <React.Fragment>
       <div style={kombuchaDetailStyles}>
-        <h1>Kombucha Detail</h1>
+        <h1>Kombucha specs:</h1>
         <hr />
         <h3>{kombucha.name}</h3>
         <h5>From: {kombucha.brand}</h5>
