@@ -5,7 +5,7 @@
 
 ### Description
 
-_A Friday Project for Epicodus that serves as an introduction to React with create-react-app, components, JSX, and props while building a dynamic site. This tap room displays a list of kombucha on tap and a static._
+_A Friday Project for Epicodus that serves as an introduction to React with create-react-app, components, JSX, and props while building a dynamic site. This tap room displays a list of kombucha on tap and lets a user add new kegs or buy pints._
 
 ![Wireframe](src/img/tap-room.jpg)
 
