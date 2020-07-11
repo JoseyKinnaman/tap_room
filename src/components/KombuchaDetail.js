@@ -21,7 +21,6 @@ function KombuchaDetail(props) {
         <h5>Flavor: {kombucha.flavor}</h5>
         <p>$ {kombucha.price}</p>
         <p>ACV: {kombucha.alcoholContent}%</p>
-        {/* <p>Pints remaning/keg: <b>{kombucha.pints}</b></p> */}
       </div>
     </React.Fragment>
   );
