@@ -12,14 +12,13 @@ function Kombucha(props){
   }
   return(
     <React.Fragment>
-      <div onClick = {() => props.whenKombuchaClicked(props.id)} style={kombuchaStyles}>
+      <div style={kombuchaStyles}>
         <h3>{props.name}</h3>
         <h5>From: {props.brand}</h5>
         <h5>Flavor: {props.flavor}</h5>
-        {/* <p>$ {props.price}</p>
-        <p>ACV: {props.alcoholContent}%</p> */}
-        <div className="pints">
-          <p>Pints remaning/keg: <b>{props.pints}</b></p>
+        <p>Pints remaning/keg: <b>{props.pints}</b></p>
+        <div class="form-group">
+          <button onClick={() => props.whenKombuchaClicked(props.id)}  class="btn btn-info">View Details</button>
         </div>
         <button class="btn btn-dark" onClick ={ ()=> props.whenKombuchaPurchased(props.id)}>Buy</button>
       </div>
@@ -33,11 +32,10 @@ Kombucha.propTypes = {
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
   flavor: PropTypes.string.isRequired,
-  pints: PropTypes.number.isRequired,
+  pints: PropTypes.number,
+  id: PropTypes.string,
   whenKombuchaClicked: PropTypes.func,
   whenKombuchaPurchased: PropTypes.func,
 };
-console.log(Kombucha.propTypes)
 
-//124 pints in a keg
 export default Kombucha;

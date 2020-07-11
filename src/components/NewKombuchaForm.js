@@ -14,7 +14,7 @@ function NewKombuchaForm(props) {
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
-    props.onNewKombuchaCreation({ name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, alcoholContent: event.target.alcoholContent.value, flavor: event.target.flavor.value, pints: event.target.pints.value, id: v4() });
+    props.onNewKombuchaCreation({ name: event.target.name.value, brand: event.target.brand.value, price: event.target.price.value, alcoholContent: event.target.alcoholContent.value, flavor: event.target.flavor.value, pints: 124, id: v4() });
   }
   return (
     <React.Fragment>
@@ -57,16 +57,6 @@ function NewKombuchaForm(props) {
                   required />
               </div>
               <div class="form-group">
-                <label for="staticPint">Pints: </label>
-                <br/>
-                <input 
-                  type="text" 
-                  readonly 
-                  id="staticPint" 
-                  name="pints" 
-                  value="124"/>
-              </div>
-              <div class="form-group">
                 <button class="btn btn-dark" type='submit'>Add to Stock</button>
               </div>
         </form>
@@ -80,14 +70,3 @@ function NewKombuchaForm(props) {
     };
 
 export default NewKombuchaForm;
-
-  // name: PropTypes.string.required,
-  // brand: PropTypes.string.required,
-  // price: PropTypes.number.required,
-  // alcholContent: PropTypes.number.required,
-  // flavor: PropTypes.string.required,
-  // pints: PropTypes.number.required
-
-
-
-//124 pints in a keg
